@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<paciente><id>3</id><nombre>Angel Mochis</nombre><edad>24</edad><genero>M</genero><correo>angel.18octubre@gmail.com</correo><telefono>3333333333</telefono><metadatos><origen>WEB</origen><fecha_evento>2025-10-28T17:34:32.277195</fecha_evento><operacion>ALTA</operacion><checksum>96011b8aeac90fc3da078cf88cd1ce66</checksum></metadatos></paciente>

@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<receta><paciente><nombre>a</nombre><edad>22</edad><genero>M</genero></paciente><medico><nombre>Alfonso Rivera</nombre><cedula>123123123</cedula></medico><diagnostico>Dolor de cabeza</diagnostico><medicamentos><medicamento><nombre>Paracetamol</nombre><dosis>10g</dosis><frecuencia>Cada 8hr</frecuencia></medicamento></medicamentos></receta>

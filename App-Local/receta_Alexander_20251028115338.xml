@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<receta><paciente><nombre>Alexander</nombre><edad>22</edad><genero>M</genero></paciente><medico><nombre>Pedro</nombre><cedula>123123</cedula></medico><diagnostico>Dolor de panza</diagnostico><medicamentos><medicamento><nombre>pastilla</nombre><dosis>10 g</dosis><frecuencia>8hr</frecuencia></medicamento></medicamentos></receta>

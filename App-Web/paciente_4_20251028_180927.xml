@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<paciente><id>4</id><nombre>Angel Inda</nombre><edad>24</edad><genero>M</genero><correo>angel.18octubre@gmail.com</correo><telefono>1231313123</telefono><metadatos><origen>WEB</origen><fecha_evento>2025-10-28T18:09:27.264406</fecha_evento><operacion>ALTA</operacion><checksum>252aa73748cdf61f94945dca2d76e14e</checksum></metadatos></paciente>

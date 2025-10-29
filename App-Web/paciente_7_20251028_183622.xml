@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<paciente><id>7</id><nombre>Sancho</nombre><edad>34</edad><genero>M</genero><correo>diazalexda2@gmail.com</correo><telefono>1312312313</telefono><metadatos><origen>WEB</origen><fecha_evento>2025-10-28T18:36:22.933274</fecha_evento><operacion>ALTA</operacion><checksum>26f578c9f85e40872ee2528417fd8938</checksum></metadatos></paciente>

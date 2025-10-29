@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<paciente><id>2</id><nombre>Guadalupe</nombre><edad>21</edad><genero>F</genero><correo>lupitaotz@gmail.com</correo><telefono>3312991023</telefono><metadatos><origen>WEB</origen><fecha_evento>2025-10-28T11:38:53.085481</fecha_evento><operacion>ALTA</operacion><checksum>71df4debc921e18718adee1fdbe9175b</checksum></metadatos></paciente>

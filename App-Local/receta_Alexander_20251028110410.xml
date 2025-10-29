@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<receta><paciente><nombre>Alexander</nombre><edad>22</edad><genero>M</genero></paciente><medico><nombre>Gerardo Ortiz</nombre><cedula>123345</cedula></medico><diagnostico>Dolor de espalda </diagnostico><medicamentos><medicamento><nombre>Quetorolaco</nombre><dosis>10 g</dosis><frecuencia>8 hr</frecuencia></medicamento></medicamentos></receta>

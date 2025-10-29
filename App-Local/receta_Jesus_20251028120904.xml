@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<receta><paciente><nombre>Jesus</nombre><edad>100</edad><genero>M</genero></paciente><medico><nombre>Pedro</nombre><cedula>123123123</cedula></medico><diagnostico>Dolor</diagnostico><medicamentos><medicamento><nombre>Pastillas</nombre><dosis>10g</dosis><frecuencia>8hr</frecuencia></medicamento></medicamentos></receta>
