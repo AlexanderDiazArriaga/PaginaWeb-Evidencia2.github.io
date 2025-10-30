@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Recetario Médico - App Web</title>
+    <style>
+        body { font-family: sans-serif; margin: 20px; display: flex; gap: 40px; }
+        form { border: 1px solid #ccc; padding: 15px; border-radius: 8px; }
+        div { margin-bottom: 10px; }
+        label { display: inline-block; width: 120px; }
+        input, select { width: 250px; }
+        .container { width: 45%; }
+        .flash { padding: 10px; margin: 10px 0; border-radius: 5px; }
+        .success { background: #d4edda; color: #155724; }
+        .error { background: #f8d7da; color: #721c24; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Sincronizar Paciente (Web)</h1>
+        
+        {% with messages = get_flashed_messages(with_categories=true) %}
+          {% if messages %}
+            {% for category, message in messages %}
+              <div class="flash {{ category }}">{{ message }}</div>
+            {% endfor %}
+          {% endif %}
+        {% endwith %}
+
+        <h2>Dar de alta Paciente (y Sincronizar)</h2>
+        <form action="/guardar_paciente" method="POST">
+            <div><label for="nombre">Nombre:</label> <input type="text" name="nombre" required></div>
+            <div><label for="edad">Edad:</label> <input type="number" name="edad" required></div>
+            <div><label for="genero">Género (M/F):</label> <input type="text" name="genero" maxlength="1" required></div>
+            <div><label for="correo">Correo:</label> <input type="email" name="correo" required></div>
+            <div><label for="telefono">Teléfono:</label> <input type="text" name="telefono"></div>
+            <button type="submit">Guardar y Sincronizar</button>
+        </form>
+        
+        <h2>Pacientes en BD Web</h2>
+        <ul>
+            {% for p in pacientes %}
+            <li>ID {{p.id}}: {{p.nombre}} ({{p.correo}})</li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    <div class="container">
+        <h1>Generar Receta (Web)</h1>
+
+        <h2>Nueva Receta</h2>
+        <form action="/guardar_receta" method="POST">
+            <div>
+                <label for="paciente_id">Paciente:</label>
+                <select name="paciente_id" required>
+                    <option value="">-- Seleccione un paciente --</option>
+                    {% for p in pacientes %}
+                        <option value="{{ p.id }}">{{ p.nombre }} ({{ p.correo }})</option>
+                    {% endfor %}
+                </select>
+            </div>
+            
+            <hr>
+            
+            <div><label for="medico_nombre">Médico:</label> <input type="text" name="medico_nombre" required></div>
+            <div><label for="medico_cedula">Cédula:</label> <input type="text" name="medico_cedula" required></div>
+            
+            <hr>
+
+            <div><label for="diagnostico">Diagnóstico:</label> <input type="text" name="diagnostico" required></div>
+
+            <hr>
+
+            <div><label for="med_nombre">Medicamento:</label> <input type="text" name="med_nombre" required></div>
+            <div><label for="med_dosis">Dosis:</label> <input type="text" name="med_dosis" required></div>
+            <div><label for="med_frecuencia">Frecuencia:</label> <input type="text" name="med_frecuencia" required></div>
+
+            <button type="submit">Generar y Enviar Receta</button>
+        </form>
+    </div>
+
+</body>
+</html>
