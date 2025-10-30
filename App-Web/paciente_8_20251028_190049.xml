@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<paciente><id>8</id><nombre>Salvador</nombre><edad>53</edad><genero>M</genero><correo>shava90@gmail.com</correo><telefono>12312313</telefono><metadatos><origen>WEB</origen><fecha_evento>2025-10-28T19:00:49.034400</fecha_evento><operacion>ALTA</operacion><checksum>be49138208aada7e260a85187462ab6d</checksum></metadatos></paciente>

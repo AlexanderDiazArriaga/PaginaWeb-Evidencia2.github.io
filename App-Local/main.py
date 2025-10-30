@@ -23,7 +23,7 @@ from pydrive.drive import GoogleDrive
 
 init_db() # Esto inicializa 'recetas.db'
 
-CARPETA_DRIVE_ID = 'TU_ID_DE_CARPETA_DE_RECETAS' # (Usa tu ID real)
+CARPETA_DRIVE_ID = '1V9u5wTG0ZfRFIYrHckOgcw0Xw-9Ch6Q4' # (Usa tu ID real)
 
 # Autenticación de Google Drive
 gauth = GoogleAuth()

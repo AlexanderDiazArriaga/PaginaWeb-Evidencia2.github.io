@@ -45,5 +45,40 @@
             {% endfor %}
         </ul>
     </div>
+
+    <div class="container">
+        <h1>Generar Receta (Web)</h1>
+
+        <h2>Nueva Receta</h2>
+        <form action="/guardar_receta" method="POST">
+            <div>
+                <label for="paciente_id">Paciente:</label>
+                <select name="paciente_id" required>
+                    <option value="">-- Seleccione un paciente --</option>
+                    {% for p in pacientes %}
+                        <option value="{{ p.id }}">{{ p.nombre }} ({{ p.correo }})</option>
+                    {% endfor %}
+                </select>
+            </div>
+            
+            <hr>
+            
+            <div><label for="medico_nombre">Médico:</label> <input type="text" name="medico_nombre" required></div>
+            <div><label for="medico_cedula">Cédula:</label> <input type="text" name="medico_cedula" required></div>
+            
+            <hr>
+
+            <div><label for="diagnostico">Diagnóstico:</label> <input type="text" name="diagnostico" required></div>
+
+            <hr>
+
+            <div><label for="med_nombre">Medicamento:</label> <input type="text" name="med_nombre" required></div>
+            <div><label for="med_dosis">Dosis:</label> <input type="text" name="med_dosis" required></div>
+            <div><label for="med_frecuencia">Frecuencia:</label> <input type="text" name="med_frecuencia" required></div>
+
+            <button type="submit">Generar y Enviar Receta</button>
+        </form>
+    </div>
+
 </body>
 </html>
