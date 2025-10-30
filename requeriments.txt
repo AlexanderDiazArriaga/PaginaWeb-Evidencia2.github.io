@@ -1,0 +1,8 @@
+sqlalchemy
+Flask
+pydrive
+packaging
+reportlab
+PyPDF2
+lxml
+python-dotenv
